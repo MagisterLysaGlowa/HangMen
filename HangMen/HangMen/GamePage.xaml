@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HangMen.GamePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    NavigationPage.HasNavigationBar="False">
+    <Grid RowDefinitions="auto,auto,auto,auto,250" VerticalOptions="Center">
+        <StackLayout x:Name="button_area" Grid.Row="0" />
+        <Label
+            x:Name="mistakes_label"
+            Grid.Row="1"
+            Margin="0,0,10,0"
+            FontAttributes="Bold"
+            FontSize="20"
+            HorizontalTextAlignment="End"
+            Text="mistakes: 0"
+            TextColor="Black" />
+        <Image
+            x:Name="hangmen_image_container"
+            Grid.Row="2"
+            HeightRequest="300"
+            Source="s0.jpg"
+            WidthRequest="300" />
+        <Label
+            x:Name="password_label"
+            Grid.Row="3"
+            CharacterSpacing="5"
+            FontSize="25"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            TextColor="black" />
+        <Grid
+            x:Name="button_grid"
+            Grid.Row="4"
+            Padding="5"
+            ColumnDefinitions="*,*,*,*,*,*,*"
+            HeightRequest="250"
+            RowDefinitions="*,*,*,*" />
+    </Grid>
+</ContentPage>

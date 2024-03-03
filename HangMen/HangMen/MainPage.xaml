@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HangMen.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    NavigationPage.HasNavigationBar="False">
+
+    <StackLayout Padding="10" VerticalOptions="Center">
+        <Label
+            Margin="0,0,0,20"
+            FontAttributes="Bold"
+            FontSize="30"
+            HorizontalTextAlignment="Center"
+            Text="Wybierz kategorie" />
+        <Picker x:Name="category_picker" Margin="0,0,0,30" />
+
+        <Button
+            Background="green"
+            Clicked="StartGame_Clicked"
+            CornerRadius="10"
+            FontAttributes="Bold"
+            Text="Zagraj"
+            TextColor="White"
+            WidthRequest="200" />
+    </StackLayout>
+
+</ContentPage>
